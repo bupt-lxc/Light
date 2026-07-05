@@ -160,26 +160,21 @@ python skills\light-figure\scripts\r_ggplot.py --detect
 
 ## 科研主线
 
-```mermaid
-flowchart LR
-  A["问题 / 方向"] --> B["文件读取<br/>项目台账"]
-  B --> C["文献检索"]
-  C --> D["想法生成"]
-  D --> E{"创新性批判<br/>是否继续？"}
-  E -- "修改 idea" --> D
-  E -- "继续" --> F["研究计划"]
-  F --> G["数据工程"]
-  G --> H["实验编码"]
-  H --> I["结果分析"]
-  I --> J["程序化图表"]
-  J --> K["论文写作"]
-  K --> L["引用核查"]
-  L --> M["一致性检查"]
-  M --> N["LaTeX / 模板排版"]
-  N --> O["期刊会议匹配<br/>投稿 / 审稿回复"]
-  F -. "需要展示或软件" .-> P["前端展示<br/>系统设计"]
-  K -. "需要成果转化" .-> Q["专利交底<br/>软著材料"]
-```
+Light Skills 不是让 AI 闷头从头跑到尾，而是把科研拆成可审计、可回退、可交给用户决策的阶段。
+
+<p align="center">
+  <img src="assets/research-workflow.zh.svg" alt="Light Skills 科研主线：从问题到交付的七阶段可审计流程" width="960">
+</p>
+
+| 阶段 | Light 主要做什么 | 常用技能 |
+|---|---|---|
+| 接收与理解 | 读论文、表格、图片、项目文件，建立任务边界与项目台账 | `file-reading`、`memory-pm`、`project-structure` |
+| 查新与 idea | 检索文献、生成候选 idea、做创新性/可行性/致命缺陷批判 | `literature-search`、`idea-generation`、`idea-critique` |
+| 研究设计 | 明确假设、变量、对照、样本量、失败树和复现实验计划 | `research-plan`、`research-ethics` |
+| 数据与实验 | 整理数据、检查泄漏和质量、写实验代码、做结果分析 | `data-engineering`、`experiment-coding`、`result-analysis` |
+| 论文交付 | 生成可复现图表、写论文、核查引用、检查全文一致性、LaTeX 排版 | `figure`、`paper-writing`、`citation`、`consistency`、`typesetting` |
+| 投稿与转化 | 匹配期刊/会议、准备回复审稿、整理专利交底或软著材料 | `venue-matching`、`review-rebuttal`、`patent-disclosure`、`software-copyright` |
+| 展示与软件 | 需要项目展示、竞赛 demo 或软件系统时，补前端和系统设计 | `frontend-design`、`system-design` |
 
 ## 论文 Demo 展示
 
