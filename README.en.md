@@ -156,26 +156,21 @@ Use this for ggplot2 scientific figures. If R is missing, the figure skill shoul
 
 ## Research workflow
 
-```mermaid
-flowchart LR
-  A["Question / direction"] --> B["File reading<br/>Project ledger"]
-  B --> C["Literature search"]
-  C --> D["Idea generation"]
-  D --> E{"Novelty critique<br/>continue?"}
-  E -- "Revise idea" --> D
-  E -- "Continue" --> F["Research plan"]
-  F --> G["Data engineering"]
-  G --> H["Experiment coding"]
-  H --> I["Result analysis"]
-  I --> J["Programmatic figures"]
-  J --> K["Paper writing"]
-  K --> L["Citation verification"]
-  L --> M["Consistency checks"]
-  M --> N["LaTeX / templates"]
-  N --> O["Venue matching<br/>submission / rebuttal"]
-  F -. "Needs demo/software" .-> P["Frontend demo<br/>system design"]
-  K -. "Needs IP material" .-> Q["Patent disclosure<br/>software copyright"]
-```
+Light Skills is not designed to let an agent blindly run the whole project end to end. It breaks research into auditable stages with explicit checkpoints, rollback paths, and user decisions.
+
+<p align="center">
+  <img src="assets/research-workflow.en.svg" alt="Light Skills research workflow: seven auditable stages from question to delivery" width="960">
+</p>
+
+| Stage | What Light mainly does | Common skills |
+|---|---|---|
+| Intake and understanding | Read papers, tables, images, and project files; define task boundaries and maintain a project ledger | `file-reading`, `memory-pm`, `project-structure` |
+| Novelty and ideas | Search literature, generate candidate ideas, and critique novelty, feasibility, and fatal flaws | `literature-search`, `idea-generation`, `idea-critique` |
+| Research design | Specify hypotheses, variables, controls, sample size, failure trees, and reproducible study plans | `research-plan`, `research-ethics` |
+| Data and experiments | Prepare data, check leakage and quality, implement experiments, and analyze results | `data-engineering`, `experiment-coding`, `result-analysis` |
+| Paper delivery | Generate reproducible figures, write the manuscript, verify citations, check consistency, and typeset LaTeX | `figure`, `paper-writing`, `citation`, `consistency`, `typesetting` |
+| Submission and IP | Match venues, prepare rebuttals, and organize patent or software-copyright materials | `venue-matching`, `review-rebuttal`, `patent-disclosure`, `software-copyright` |
+| Demo and software | Add frontend demos and system design when a project, competition, or product needs an interface | `frontend-design`, `system-design` |
 
 ## Paper demo
 
