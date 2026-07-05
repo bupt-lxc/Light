@@ -154,6 +154,34 @@ Use this for ggplot2 scientific figures. If R is missing, the figure skill shoul
 | Figures and demos | `light-figure`, `light-frontend-design`, `light-system-design` |
 | Integrity and IP | `light-research-ethics`, `light-patent-disclosure`, `light-software-copyright` |
 
+## Complete skill catalog
+
+| Skill | Main use | Typical outputs |
+|---|---|---|
+| [`light-orchestrator`](skills/light-orchestrator) | Main controller: understand the task, ask necessary questions, select the skill chain, and set user decision gates | Stage plan, skill routing, decision checkpoints, workflow ledger |
+| [`light-memory-pm`](skills/light-memory-pm) | Project ledger and cross-session continuation without storing private memory in the public repository | Project card, handoff card, decision log, resume prompt |
+| [`light-file-reading`](skills/light-file-reading) | Read papers, PDFs, Word files, slides, spreadsheets, images, and project files | File inventory, understanding notes, extraction-quality report, unverified-claim list |
+| [`light-project-structure`](skills/light-project-structure) | Scaffold and govern research/software project directories for maintainability and reproducibility | Project scaffold, directory policy, governance rules, structure check |
+| [`light-literature-search`](skills/light-literature-search) | Build search strategies, expand keywords, track evidence boundaries, and map related work | Search strings, evidence map, literature table, PRISMA-style flow record |
+| [`light-idea-generation`](skills/light-idea-generation) | Generate candidate research ideas from literature gaps, cross-domain analogies, and constraints | Idea cards, gap evidence, genealogy analysis, candidate ranking |
+| [`light-idea-critique`](skills/light-idea-critique) | Critique novelty, falsifiability, feasibility, and fatal flaws before committing to an idea | Go/no-go verdict, counterexample list, revision roadmap, novelty-evidence gate |
+| [`light-research-plan`](skills/light-research-plan) | Convert a question into an executable study plan with hypotheses, variables, controls, and failure trees | Experiment matrix, preregistration draft, sample-size/power checks, reproducibility plan |
+| [`light-research-ethics`](skills/light-research-ethics) | Check ethics, authority, consent, data boundaries, and research-integrity risks | Ethics risk table, authority lifecycle check, retraction/overlap/anomalous-text alerts |
+| [`light-data-engineering`](skills/light-data-engineering) | Assess data identity, access, quality, splits, leakage, feasibility, and drift risks | Data card, quality gate, leakage check, feasibility report |
+| [`light-experiment-coding`](skills/light-experiment-coding) | Build reproducible experiment code, configuration, tests, and run records | Experiment scaffold, config schema, seed audit, run manifest |
+| [`light-result-analysis`](skills/light-result-analysis) | Run statistical analysis, method-compatibility checks, leakage/overfit checks, and result interpretation | Analysis report, statistical tests, method-compatibility check, result card |
+| [`light-figure`](skills/light-figure) | Plan and generate paper/data figures programmatically, with Python and R support | Figure plan card, Python/R figures, export package, visual-honesty check |
+| [`light-paper-writing`](skills/light-paper-writing) | Draft manuscript structure, argument chains, contributions, limitations, and self-review from existing evidence | IMRaD/conference draft, claim-evidence binding, self-review checklist, polished manuscript |
+| [`light-citation`](skills/light-citation) | Verify citation truth, DOI, links, locators, and claim-citation binding | Citation registry, four-gate verification, suspicious-reference list, repair suggestions |
+| [`light-consistency`](skills/light-consistency) | Check consistency across the paper, figures, slides, code, and supplementary materials | Glossary, fact bindings, metric/method locks, cross-material consistency report |
+| [`light-typesetting`](skills/light-typesetting) | Typeset with LaTeX templates, compile PDFs, inspect logs, and preflight submissions | Compilable LaTeX/PDF, template adaptation, build log, submission-readiness check |
+| [`light-venue-matching`](skills/light-venue-matching) | Match journals/conferences using topic fit, evidence, risk, and privacy constraints | Venue candidate table, fit ranking, risk notes, user-selection record |
+| [`light-review-rebuttal`](skills/light-review-rebuttal) | Decompose reviews, plan extra experiments, manage commitments, and draft responses | Response matrix, commitment ledger, experiment-request gate, response letter |
+| [`light-frontend-design`](skills/light-frontend-design) | Design interfaces, components, and presentation experiences for research projects, competitions, or software demos | Page structure, component plan, motion suggestions, accessibility/browser QA |
+| [`light-system-design`](skills/light-system-design) | Design software architecture, APIs, data models, migrations, and readiness checks | Architecture package, OpenAPI/schema, migration strategy, design-readiness report |
+| [`light-patent-disclosure`](skills/light-patent-disclosure) | Organize invention points, prior-art differences, and patent disclosure materials without replacing legal advice | Patent interview notes, search leads, disclosure evidence packet |
+| [`light-software-copyright`](skills/light-software-copyright) | Prepare software-copyright materials, source-deposit planning, and completeness checks | Software-copyright packet, source-deposit plan, materials completeness check |
+
 ## Research workflow
 
 Light Skills is not designed to let an agent blindly run the whole project end to end. It breaks research into auditable stages with explicit checkpoints, rollback paths, and user decisions.
